@@ -1,9 +1,41 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+이 블로그는[Fuwari](https://github.com/saicaca/fuwari)를 기반으로 제작되었습니다.
 
 ::github{repo="saicaca/fuwari"}
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+## 🚀 사용하는 방법
+
+1. 이 템플릿에서 [새 저장소를 생성](https://github.com/saicaca/fuwari/generate)하거나 이 저장소를 포크하세요.
+2. 블로그를 로컬에서 편집하려면 저장소를 복제하고 `pnpm install` 및 `pnpm add sharp`를 실행하여 종속성을 설치하세요.  
+   - 아직 [pnpm](https://pnpm.io)을 설치하지 않았다면 `npm install -g pnpm`을 실행하여 [pnpm](https://pnpm.io)을 설치하세요.
+3. 블로그를 사용자 정의하려면 `src/config.ts` 구성 파일을 편집하세요.
+4. `pnpm new-post <filename>`을 실행하여 새 게시물을 만들고 `src/content/posts/`에서 편집하세요.
+5. [가이드](https://docs.astro.build/en/guides/deploy/)에 따라 블로그를 Vercel, Netlify, GitHub 페이지 등에 배포하세요. 배포하기 전에 `astro.config.mjs`에서 사이트 구성을 편집해야 합니다.
+
+## ⚙️ 게시물의 머리말 설정
+
+```yaml
+---
+title: 내 첫 블로그 게시물
+published: 2023-09-09
+description: 내 새로운 Astro 블로그의 첫 번째 게시물입니다!
+image: /images/cover.jpg
+tags: [푸, 바, 오]
+category: 앞-끝
+draft: false
+---
+```
+
+## 🧞 명령어
+
+모든 명령어는 프로젝트 최상단, 터미널에서 실행됩니다:
+
+| Command                             | Action                                           |
+|:------------------------------------|:-------------------------------------------------|
+| `pnpm install` AND `pnpm add sharp` | 종속성을 설치합니다.                            |
+| `pnpm dev`                          | `localhost:4321`에서 로컬 개발 서버를 시작합니다.      |
+| `pnpm build`                        | `./dist/`에 프로덕션 사이트를 구축합니다.         |
+| `pnpm preview`                      | 배포하기 전에 로컬에서 빌드 미리보기     |
+| `pnpm new-post <filename>`          | 새 게시물 작성                                |
+| `pnpm astro ...`                    | `astro add`, `astro check`와 같은 CLI 명령어 실행 |
+| `pnpm astro --help`                 | Astro CLI를 사용하여 도움 받기                     |
