@@ -8,7 +8,9 @@ category: '블로그'
 draft: false 
 ---
 
-소개와 용어 설명을 건너뛰고싶다면 [여기](/posts/blog/how-to-make-github-blog/#새-github-저장소-생성)를 클릭
+소개와 용어 설명을 건너뛰고싶다면 [여기](#새-github-저장소-생성)를 클릭
+
+따라 하는 중 오류가 발생했다면, [여기](/posts/blog/blog-problem/)를 클릭해 참고
 
 ## 소개 및 용어 설명
 
@@ -28,7 +30,6 @@ Astro로 구축된 정적 블로그 템플릿
 - 라이트 모드 / 다크 모드
 - 검색
 - 목차
-
 
 ### 깃허브 블로그란?
 
@@ -97,7 +98,7 @@ GitHub 페이지에 배포하기 위해서는 배포하기 전에 `astro.config.
 
 ### github.io URL에 배포
 
-astro.config.mjs에서 site 및 base 옵션을 설정
+`astro.config.mjs`에서 아래와 같이 site 및 base 옵션을 설정
 
 ```yml
 export default defineConfig({
@@ -161,9 +162,11 @@ GitHub에서 저장소의 Settings 탭으로 이동하여 설정의 Pages 섹션
 
 ## (옵션) 로컬 블로그 테스트
 
-`pnpm dev` 명령어를 실행하여 `localhost:4321`에서 로컬 개발 서버를 시작해 테스트 가능
+`pnpm dev` 명령어를 실행하여 `localhost:4321`에서 로컬 개발 서버를 시작해 테스트
 
 ## 새 저장소에 로컬 파일 푸시
+
+아래의 명령어들을 실행
 
 ```bash
 # 터미널(또는 명령 프롬프트)을 열고, 아래 명령어로 로컬 저장소를 초기화
@@ -198,7 +201,3 @@ GitHub에서 저장소의 Actions 탭으로 이동해 워크플로 수행여부 
 ## 배포된 깃허브 블로그 접속
 
 워크플로가 성공했으면 `https://<username>.github.io`로 접속해 정상적으로 사이트에 접근 가능
-
-## 블로그를 만들 때 오류가 발생했을 경우
-
-블로그를 만들면서 발생했던 오류들과 그 해결책을 정리한 글을 보려면 [여기](/posts/blog/blog-problem/)를 클릭

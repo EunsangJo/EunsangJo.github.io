@@ -10,7 +10,7 @@ draft: false
 
 ## siteConfig
 
-`siteConfig`: 웹사이트 설정을 위한 구성 파일.
+`siteConfig`: 웹사이트 설정을 위한 구성 파일
 
 ```ts
 export const siteConfig: SiteConfig = {
@@ -47,7 +47,7 @@ export const siteConfig: SiteConfig = {
 
 ## navBarConfig
 
-`navBarConfig`: 네비게이션 바 구성을 위한 설정 파일.
+`navBarConfig`: 네비게이션 바 구성을 위한 설정 파일
 
 ```ts
 export const navBarConfig: NavBarConfig = {
@@ -66,7 +66,7 @@ export const navBarConfig: NavBarConfig = {
 
 ## profileConfig
 
-`profileConfig`: 프로필 구성을 위한 설정 파일.
+`profileConfig`: 프로필 구성을 위한 설정 파일
 
 ```ts
 export const profileConfig: ProfileConfig = {
@@ -92,7 +92,7 @@ export const profileConfig: ProfileConfig = {
 
 ## licenseConfig
 
-`licenseConfig`: 사이트의 라이선스 설정을 위한 구성 파일.
+`licenseConfig`: 사이트의 라이선스 설정을 위한 구성 파일
 
 ```ts
 export const licenseConfig: LicenseConfig = {
