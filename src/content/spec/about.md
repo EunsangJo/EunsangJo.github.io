@@ -1,5 +1,5 @@
 # About
-이 블로그는[Fuwari](https://github.com/saicaca/fuwari)를 기반으로 제작되었습니다.
+이 블로그는 [Fuwari](https://github.com/saicaca/fuwari)를 기반으로 제작되었습니다.
 
 ::github{repo="saicaca/fuwari"}
 
